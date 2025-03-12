@@ -5,17 +5,17 @@ GENERAL STYLING
 :root {
   /*色*/
   --darkgray: #4d4d4d;
-  --yellow: #F6FD51;
-  --l-yellow: #FFF9DB;
-  --orange: #FD6851;
-  --d-orange: #BF5443;
-  --green: #1AB53A;
-  --l-green: #E9F7EC;
+  --yellow: #f6fd51;
+  --l-yellow: #fff9db;
+  --orange: #fd6851;
+  --d-orange: #bf5443;
+  --green: #1ab53a;
+  --l-green: #e9f7ec;
   --d-green: #127226;
-  --blue: #0F6EB8;
-  --d-blue:#0D4E81;
-  --l-gray: #F2F2F2;
-  --border: #C7C7C7;
+  --blue: #0f6eb8;
+  --d-blue: #0d4e81;
+  --l-gray: #f2f2f2;
+  --border: #c7c7c7;
 
   /*文字の太さ*/
   --normal: 400;
@@ -24,16 +24,9 @@ GENERAL STYLING
   --bold: 700;
 
   /*フォント*/
-  --basic: "Helvetica Neue",
-    "Helvetica",
-    "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN",
-    "Arial",
-    "Yu Gothic",
-    "Meiryo",
-    sans-serif;
-  --marugo: 'M PLUS Rounded 1c',
-    sans-serif;
+  --basic: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  --marugo: "M PLUS Rounded 1c", sans-serif;
 }
 
 html {
@@ -53,7 +46,7 @@ html {
 
 body {
   font-family: var(--basic);
-  line-height: 1.7;
+  line-height: 1.8;
   color: var(--darkgray);
   font-size: 1.6rem;
   position: relative;
@@ -61,7 +54,7 @@ body {
 
 a,
 button {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 a {
@@ -100,7 +93,7 @@ iframe {
   display: none;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .br-sp {
     display: none;
   }
@@ -111,7 +104,7 @@ iframe {
 }
 
 /*--reverse--*/
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .reverse {
     flex-direction: row-reverse;
   }
@@ -138,7 +131,7 @@ heading：見出し
 }
 
 .ttl:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -13px;
   display: inline-block;
@@ -151,14 +144,13 @@ heading：見出し
   background-color: var(--green);
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .ttl-level3 {
     margin-bottom: 60px;
   }
 
   .ttl {
     font-size: 3.2rem;
-    ;
   }
 }
 
@@ -176,7 +168,7 @@ heading：見出し
   text-align: left;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .txt-center-pc {
     text-align: center;
   }
@@ -215,19 +207,19 @@ heading：見出し
 /*
 button：ボタン
 ================================================ */
-.btn-block{
-   /*影の基点とするためrelativeを指定*/
-   position: relative;
-   /*ボタンの形状*/
-   text-decoration: none;
-   display: inline-block;
-   width: 100%;
-   text-align: center;
-   background: transparent;
-   border-radius: 25px;
-   outline: none;
-   /*アニメーションの指定*/
-   transition: all 0.2s ease;
+.btn-block {
+  /*影の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  border-radius: 25px;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: all 0.2s ease;
 }
 .btn-block:hover {
   border-color: transparent;
@@ -246,10 +238,10 @@ button：ボタン
   transition: all 0.3s ease;
   font-weight: var(--d-bold);
 }
-.btn-block span::after{
-  font-family: 'Material Icons';
-  content: 'play_circle_filled';
-  vertical-align: -.2em;
+.btn-block span::after {
+  font-family: "Material Icons";
+  content: "play_circle_filled";
+  vertical-align: -0.2em;
   padding-left: 7px;
 }
 .pushdown::before {
@@ -257,7 +249,7 @@ button：ボタン
   /*絶対配置で影の位置を決める*/
   position: absolute;
   z-index: 0;
-  top:7px;
+  top: 7px;
   left: 0;
   /*影の形状*/
   width: 100%;
@@ -271,10 +263,10 @@ button：ボタン
   transform: translateY(7px);
 }
 /*--問い合わせボタン--*/
-.btn-block._send span{
+.btn-block._send span {
   background: var(--orange);
 }
-.pushdown._send::before{
+.pushdown._send::before {
   background: var(--d-orange);
 }
 .btn-center {
@@ -288,7 +280,7 @@ section {
   padding: 60px 0;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   section {
     padding: 80px 0;
   }
@@ -300,7 +292,7 @@ section {
   max-width: 1000px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .w800 {
     max-width: 800px;
     margin: 0 auto;
@@ -313,25 +305,25 @@ section {
 /*
 header:ヘッダー
 ================================================ */
-#header{
+#header {
   background: var(--green);
   padding: 6px 3.8vw;
   min-height: 60px;
 }
-.header-inner{
+.header-inner {
   color: #fff;
   font-family: var(--marugo);
   font-weight: (--bold);
 }
-.header-inner h1{
+.header-inner h1 {
   font-size: 2.5rem;
   line-height: 1.3;
 }
-.header-inner h1 span{
+.header-inner h1 span {
   display: block;
   font-size: 1rem;
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   #header {
     height: 80px;
     display: flex;
@@ -345,44 +337,45 @@ header:ヘッダー
 /*
 mv:トップ画面
 ================================================ */
-.mv{
+.mv {
   padding: 40px 0;
-  background: url('../img/ill_top_sp.png') no-repeat center center,var(--l-green);
+  background: url("../img/ill_top_sp.png") no-repeat center center,
+    var(--l-green);
 }
-.mv-pc{
+.mv-pc {
   display: none;
 }
-.mv-sp{
+.mv-sp {
   margin-bottom: 30px;
 }
-.mv-sp-top{
+.mv-sp-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 13px;
 }
-.mv-sp-top figure{
+.mv-sp-top figure {
   width: 24%;
 }
-.mv-top-inner{
+.mv-top-inner {
   width: 70%;
 }
 .mv-auto,
-.mv-title{
+.mv-title {
   font-family: var(--marugo);
   font-weight: var(--bold);
-  color:var(--green);
+  color: var(--green);
 }
-.mv-auto{
-   position: relative;
-   border-bottom: 2px solid var(--green);
-   text-align: center;
-   font-size: 1.8rem;
-   /*--padding: 0 0 10px 0;--*/
-   margin: 0;
-   display: inline-block;
+.mv-auto {
+  position: relative;
+  border-bottom: 2px solid var(--green);
+  text-align: center;
+  font-size: 1.8rem;
+  /*--padding: 0 0 10px 0;--*/
+  margin: 0;
+  display: inline-block;
 }
-.mv-auto::before{
+.mv-auto::before {
   content: "";
   position: absolute;
   bottom: -25px;
@@ -392,7 +385,7 @@ mv:トップ画面
   border-top: 13px solid var(--l-green);
   z-index: 2;
 }
-.mv-auto::after{
+.mv-auto::after {
   position: absolute;
   border: 16px solid transparent;
   border-top-color: var(--green);
@@ -402,81 +395,80 @@ mv:トップ画面
   left: 40%;
   z-index: 1;
 }
-.mv-title{
+.mv-title {
   font-size: 4.4rem;
 }
-.mv-start{
+.mv-start {
   width: 75vw;
   margin: 0 auto;
 }
-.mv-start-inner{
+.mv-start-inner {
   width: 70vw;
   margin: 0 auto 15px;
   padding: 14px 20px;
-  background-color: rgba(255, 255, 255, .8);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   text-align: center;
   color: var(--orange);
   font-weight: var(--d-bold);
 }
-.mv-start-inner p:last-child{
+.mv-start-inner p:last-child {
   font-size: 4rem;
   line-height: 1.3;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
 }
-.mv-start-inner p:last-child span{
+.mv-start-inner p:last-child span {
   font-size: 2.2rem;
 }
-@media (min-width:768px){
-  .mv{
+@media (min-width: 768px) {
+  .mv {
     /*padding: 40px 0 45px;*/
     padding: 7.5vh 0 6.25vh;
-    background: url('../img/ill_top.png') no-repeat right bottom,
-    var(--l-green);
+    background: url("../img/ill_top.png") no-repeat right bottom, var(--l-green);
   }
-  .mv-sp{
+  .mv-sp {
     display: none;
   }
-  .mv-pc{
+  .mv-pc {
     display: block;
   }
-  .mv-pc-top{
+  .mv-pc-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     /*margin-bottom: 30px;*/
     margin-bottom: 3.75vh;
   }
-  .mv-pc-top figure{
+  .mv-pc-top figure {
     width: 30%;
   }
-  .mv-top-inner{
+  .mv-top-inner {
     width: 70%;
   }
-  .mv-start-inner{
+  .mv-start-inner {
     width: 100%;
   }
   .mv-auto {
     font-size: 2.4rem;
   }
-  .mv-title{
+  .mv-title {
     font-size: 7rem;
     line-height: 1.5;
   }
-  .mv-start{
+  .mv-start {
     width: 40vw;
     max-width: 400px;
     /*margin: 14px 0 0 0;*/
     margin: 1.75vh 0 0 0;
   }
-  .mv-start-inner{
+  .mv-start-inner {
     width: 38vw;
     max-width: 340px;
     /*margin: 0 auto 18px;*/
     margin: 0 auto 2.25vh;
     padding: 10px 0;
   }
-  .mv-start .btn-center{
+  .mv-start .btn-center {
     margin: 0;
   }
 }
@@ -492,7 +484,7 @@ about：Lステップとは
   font-size: 1.4rem;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .about-container {
     display: flex;
     justify-content: space-between;
@@ -513,7 +505,7 @@ about：Lステップとは
 effect：こんな成果が出ています
 ================================================ */
 .effect {
-  background: url('../img/ill_class_man_tr.png') right bottom no-repeat,
+  background: url("../img/ill_class_man_tr.png") right bottom no-repeat,
     rgb(233, 247, 236);
 }
 
@@ -532,8 +524,8 @@ effect：こんな成果が出ています
   position: absolute;
   top: 14px;
   left: 8px;
-  font-family: 'Material Icons';
-  content: 'auto_awesome';
+  font-family: "Material Icons";
+  content: "auto_awesome";
   color: var(--green);
   font-size: 2rem;
 }
@@ -542,7 +534,7 @@ effect：こんな成果が出ています
   display: none;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .effect {
     background-image: none;
   }
@@ -596,15 +588,15 @@ worries：こんなお悩みありませんか？
 }
 
 .worries-box._mail .worries-list {
-  background: url('../img/ill_nayami_mail_tr.png') no-repeat right bottom;
+  background: url("../img/ill_nayami_mail_tr.png") no-repeat right bottom;
 }
 
 .worries-box._line .worries-list {
-  background: url('../img/ill_nayami_line_tr.png') no-repeat right bottom;
+  background: url("../img/ill_nayami_line_tr.png") no-repeat right bottom;
 }
 
 .worries-box._dm .worries-list {
-  background: url('../img/ill_nayami_dm_tr.png') no-repeat right bottom;
+  background: url("../img/ill_nayami_dm_tr.png") no-repeat right bottom;
 }
 
 .worries-list {
@@ -623,8 +615,8 @@ worries：こんなお悩みありませんか？
   position: absolute;
   top: 14px;
   left: 8px;
-  font-family: 'Material Icons';
-  content: 'check';
+  font-family: "Material Icons";
+  content: "check";
   color: var(--green);
   font-size: 2rem;
 }
@@ -633,7 +625,7 @@ worries：こんなお悩みありませんか？
   display: none;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .worries-title {
     margin-bottom: 30px;
     font-size: 2.2rem;
@@ -649,13 +641,13 @@ worries：こんなお悩みありませんか？
   .worries-box._dm .worries-list {
     background: none;
   }
-  
-  .worries-container{
+
+  .worries-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .worries-list{
+  .worries-list {
     width: 68%;
     padding-bottom: 0;
     margin-bottom: 50px;
@@ -669,27 +661,27 @@ worries：こんなお悩みありませんか？
 /*
 func：こんな機能が盛りだくさん
 ================================================ */
-.func-list{
+.func-list {
   margin-top: 40px;
 }
-.func-list .func-item + .func-item{
+.func-list .func-item + .func-item {
   margin-top: 30px;
 }
-.func-img figure{
+.func-img figure {
   position: relative;
   padding-top: 200px;
 }
-.func-img figure img{
+.func-img figure img {
   position: absolute;
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
 }
-.func-item dl{
-  padding:20px 15px;
+.func-item dl {
+  padding: 20px 15px;
   border: 2px solid var(--green);
 }
-.func-item dt{
+.func-item dt {
   text-align: center;
   font-family: var(--marugo);
   font-size: 2rem;
@@ -697,92 +689,92 @@ func：こんな機能が盛りだくさん
   font-weight: var(--bold);
   margin-bottom: 14px;
 }
-.func-item .func-link{
+.func-item .func-link {
   margin-top: 14px;
 }
-.func-item .func-link a{
+.func-item .func-link a {
   display: inline-flex;
   align-items: center;
 }
-@media (min-width:768px){
- .func-list{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
- }
- .func-item{
-   width: 30.3%;
- }
- .func-item dt{
-   font-size: 1.8rem;
- }
- .func-item:nth-child(-n+3){
-   margin-bottom: 60px;
- }
- .func-list .func-item+.func-item {
-   margin-top: 0px;
- }
- .func-item dl dd.func-txt{
-   min-height: calc(1.6em * 6);
-   line-height: 1.7;
- }
- .func-item .func-link {
-   margin-top: 0;
- }
+@media (min-width: 768px) {
+  .func-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .func-item {
+    width: 30.3%;
+  }
+  .func-item dt {
+    font-size: 1.8rem;
+  }
+  .func-item:nth-child(-n + 3) {
+    margin-bottom: 60px;
+  }
+  .func-list .func-item + .func-item {
+    margin-top: 0px;
+  }
+  .func-item dl dd.func-txt {
+    min-height: calc(1.6em * 6);
+    line-height: 1.7;
+  }
+  .func-item .func-link {
+    margin-top: 0;
+  }
 }
 
 /*
 users：こんな機能が盛りだくさん
 ================================================ */
-.users-txt{
+.users-txt {
   margin-bottom: 40px;
   font-weight: var(--d-bold);
   font-size: 1.8rem;
 }
-.users-item{
+.users-item {
   margin-bottom: 30px;
 }
-.users-item figure img{
+.users-item figure img {
   width: 100%;
 }
-.users-item-txt{
+.users-item-txt {
   background: #fff;
   padding: 16px 15px 30px;
 }
-.users-item-txt p + p{
+.users-item-txt p + p {
   margin-top: 16px;
 }
 .users-job,
-.users-title{
+.users-title {
   font-size: 1.2rem;
 }
-.users-name{
+.users-name {
   font-size: 2.2rem;
   font-weight: var(--bold);
 }
-.users-name::after{
-  content: '様';
+.users-name::after {
+  content: "様";
 }
 .users-link a {
   display: inline-flex;
   align-items: center;
 }
-@media (min-width:768px){
-  .users-txt{
+@media (min-width: 768px) {
+  .users-txt {
     text-align: center;
   }
-  .users-list{
+  .users-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .users-item{
+  .users-item {
     /*width: 22.6%;*/
     width: 24%;
     margin-bottom: 0px;
   }
-  .users-name{
+  .users-name {
     font-size: 1.6rem;
     letter-spacing: -0.5px;
   }
@@ -790,7 +782,7 @@ users：こんな機能が盛りだくさん
     min-height: calc(1.2em * 4);
     line-height: 1.7;
   }
-  .users-detail{
+  .users-detail {
     margin-top: 0;
     min-height: calc((1.6em * 5));
     line-height: 1.7;
@@ -800,22 +792,22 @@ users：こんな機能が盛りだくさん
 /*
 biz：こんな業界で活用できます
 ================================================ */
-.biz-item{
+.biz-item {
   margin-bottom: 30px;
 }
-.biz-item figure{
+.biz-item figure {
   position: relative;
   background: var(--l-yellow);
   padding-top: 237px;
   margin-bottom: 10px;
 }
-.biz-item figure img{
+.biz-item figure img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.biz-item p{
+.biz-item p {
   color: var(--green);
   font-family: var(--marugo);
   font-size: 2rem;
@@ -823,13 +815,13 @@ biz：こんな業界で活用できます
   text-align: center;
   line-height: 1.3;
 }
-@media (min-width:768px){
-  .biz-list{
+@media (min-width: 768px) {
+  .biz-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .biz-item{
+  .biz-item {
     width: 30.3%;
   }
   .biz-item p {
@@ -839,93 +831,93 @@ biz：こんな業界で活用できます
 /*
 security：安心のセキュリティ
 ================================================ */
-.security-list .security-item + .security-item{
+.security-list .security-item + .security-item {
   margin-top: 30px;
 }
-.security-item{
+.security-item {
   background: #fff;
   padding: 30px 20px;
 }
-.security-ttl{
+.security-ttl {
   font-size: 2.2rem;
   font-weight: var(--bold);
   text-align: center;
   color: var(--green);
   margin-bottom: 20px;
 }
-.security-item figure{
+.security-item figure {
   margin-bottom: 20px;
   text-align: center;
 }
-@media (min-width:768px){
-  .security-list{
+@media (min-width: 768px) {
+  .security-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .security-list .security-item+.security-item {
+  .security-list .security-item + .security-item {
     margin-top: 0px;
   }
-  .security-item{
+  .security-item {
     width: 30.3%;
   }
-  .security-item figure{
+  .security-item figure {
     min-height: 103px;
     position: relative;
   }
-  .security-item figure img{
+  .security-item figure img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 }
 /*
 plan：料金プラン
 ================================================ */
-.plan-list{
+.plan-list {
   margin-bottom: 10px;
 }
-.plan-item{
+.plan-item {
   border: 2px solid var(--orange);
   padding: 30px 15px 20px;
   margin-bottom: 30px;
 }
-.plan-item:last-child{
+.plan-item:last-child {
   margin-bottom: 0px;
 }
-.plan-name{
+.plan-name {
   text-align: center;
   font-weight: var(--bold);
   font-size: 2.6rem;
   line-height: 1.3;
   margin-bottom: 30px;
 }
-.plan-price-box{
+.plan-price-box {
   text-align: center;
   font-weight: var(--bold);
   margin-bottom: 30px;
 }
-.plan-tax{
+.plan-tax {
   font-size: 1.4rem;
 }
-.plan-price{
+.plan-price {
   font-size: 3.8rem;
   letter-spacing: 1px;
 }
-.plan-price .yen{
+.plan-price .yen {
   font-size: 2rem;
 }
-.plan-table li{
+.plan-table li {
   padding: 14px 0;
   border-bottom: 1px solid var(--border);
 }
-.plan-table li dl{
+.plan-table li dl {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.plan-table li dt{
+.plan-table li dt {
   width: 48%;
 }
 .plan-table li dd {
@@ -933,15 +925,15 @@ plan：料金プラン
   display: inline-flex;
   align-items: center;
 }
-.plan-super{
+.plan-super {
   vertical-align: super;
   font-size: 1.2rem;
 }
-.plan-table._top li:nth-child(-n+4) dd{
+.plan-table._top li:nth-child(-n + 4) dd {
   font-weight: var(--d-bold);
 }
 /*--プランごとの色分け--*/
-._standard{
+._standard {
   border: 2px solid var(--green);
 }
 ._pro {
@@ -949,38 +941,38 @@ plan：料金プラン
 }
 ._start .plan-name,
 ._start .plan-price,
-._start ._top li:nth-child(-n+4) dd {
+._start ._top li:nth-child(-n + 4) dd {
   color: var(--orange);
 }
 ._standard .plan-name,
 ._standard .plan-price,
-._standard ._top li:nth-child(-n+4) dd {
+._standard ._top li:nth-child(-n + 4) dd {
   color: var(--green);
 }
 ._pro .plan-name,
 ._pro .plan-price,
-._pro ._top li:nth-child(-n+4) dd {
+._pro ._top li:nth-child(-n + 4) dd {
   color: var(--blue);
 }
 /*--注意書き--*/
-.plan-max{
+.plan-max {
   color: var(--orange);
   font-weight: var(--d-bold);
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
-.plan-max a{
+.plan-max a {
   color: inherit;
   text-decoration: underline;
 }
-.plan-max a span{
- vertical-align: -.2em;
+.plan-max a span {
+  vertical-align: -0.2em;
 }
-.plan-caution{
+.plan-caution {
   margin-bottom: 10px;
 }
-.plan-caution li::before{
-  content: '※';
+.plan-caution li::before {
+  content: "※";
   margin-right: 0.5em;
 }
 /*--アコーディオン--*/
@@ -988,13 +980,13 @@ plan：料金プラン
   text-align: center;
   padding: 14px 0;
   position: relative;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 /*アイコンの＋と×*/
 .plan-detail::before,
 .plan-detail::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 2px;
   background-color: var(--darkgray);
@@ -1021,37 +1013,37 @@ plan：料金プラン
   display: none;
 }
 
-@media (min-width:768px){
-  .plan-list{
+@media (min-width: 768px) {
+  .plan-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .plan-item{
+  .plan-item {
     width: 32%;
     margin-bottom: 0;
   }
-  .plan-table{
+  .plan-table {
     font-size: 1.4rem;
     letter-spacing: -0.03em;
   }
-  .plan-detail{
+  .plan-detail {
     display: none;
   }
-  ._plan-func{
+  ._plan-func {
     display: block;
   }
-  ._plan-func dd span{
+  ._plan-func dd span {
     text-align: center;
   }
 }
 /*
 free：30日間無料お試し
 ================================================ */
-.free{
+.free {
   padding: 40px 0;
 }
-.free-ttl{
+.free-ttl {
   margin-bottom: 20px;
   text-align: center;
   color: var(--green);
@@ -1059,7 +1051,7 @@ free：30日間無料お試し
   font-weight: var(--bold);
   font-size: 2rem;
 }
-.free-test{
+.free-test {
   font-size: 3.8rem;
   font-family: var(--marugo);
   font-weight: var(--bold);
@@ -1068,64 +1060,64 @@ free：30日間無料お試し
   margin-bottom: 15px;
   line-height: 1.3;
 }
-.free-test span.small{
+.free-test span.small {
   display: block;
   font-size: 2rem;
 }
-.free figure{
+.free figure {
   margin-bottom: 20px;
   text-align: center;
 }
-.try-box{
+.try-box {
   max-width: 720px;
   width: 88vw;
   padding: 30px 18px;
   margin: 0 auto;
   background: #fff;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
-p.try-ttl{
+p.try-ttl {
   font-size: 2.8rem;
   font-weight: var(--d-bold);
   margin-bottom: 13px;
   text-align: center;
   letter-spacing: 0.05em;
 }
-p.try-ttl span.small{
+p.try-ttl span.small {
   font-size: 1.4rem;
 }
-.present{
+.present {
   margin: 20px auto 0;
   max-width: 17em;
 }
-.present > p{
+.present > p {
   text-align: center;
   font-family: var(--marugo);
   font-weight: var(--bold);
   margin-bottom: 10px;
   font-size: 2.2rem;
 }
-.present ul{
+.present ul {
   font-weight: var(--d-bold);
   font-size: 1.8rem;
 }
-.present ul li:first-child{
+.present ul li:first-child {
   margin-bottom: 10px;
 }
-.present ul li::before{
-  font-family: 'Material Icons';
-  content: 'check';
+.present ul li::before {
+  font-family: "Material Icons";
+  content: "check";
   color: var(--green);
-  vertical-align: -.2em;
-  margin-right: .2em;
+  vertical-align: -0.2em;
+  margin-right: 0.2em;
 }
-@media (min-width:768px){
-  .free{
+@media (min-width: 768px) {
+  .free {
     padding: 80px 0;
   }
-  .free-container{
-    background: url('../img/ill_free01.png') no-repeat left bottom,
-    url('../img/ill_free02.png') no-repeat right bottom;
+  .free-container {
+    background: url("../img/ill_free01.png") no-repeat left bottom,
+      url("../img/ill_free02.png") no-repeat right bottom;
   }
   .free-ttl {
     margin-bottom: 20px;
@@ -1137,29 +1129,29 @@ p.try-ttl span.small{
     margin-bottom: 10px;
   }
   .free figure {
-   display: none;
+    display: none;
   }
-  .try-box{
+  .try-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 20px 30px;
   }
-  .try-top{
+  .try-top {
     width: 50%;
   }
-  p.try-ttl{
+  p.try-ttl {
     font-size: 3.4rem;
     margin-bottom: 0;
   }
-  .present{
+  .present {
     margin: 0;
     width: 40%;
   }
-  .present > p{
+  .present > p {
     font-size: 1.8rem;
   }
-  .present li{
+  .present li {
     font-size: 1.6rem;
   }
 }
@@ -1186,7 +1178,7 @@ faq：よくあるご質問
   font-size: 1.8rem;
   font-weight: var(--d-bold);
   padding: 14px 5px 14px 40px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   background: var(--l-green);
   color: var(--green);
   line-height: 1.5;
@@ -1194,25 +1186,22 @@ faq：よくあるご質問
 .faq-q::before,
 .faq-q::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 3px;
   background-color: var(--green);
-
 }
 
 .faq-q::before {
   top: 48%;
   left: 13px;
   transform: rotate(0deg);
-
 }
 
 .faq-q::after {
   top: 48%;
   left: 13px;
   transform: rotate(90deg);
-
 }
 
 /*　closeというクラスがついたら形状変化　*/
@@ -1228,60 +1217,60 @@ faq：よくあるご質問
   padding: 14px 5px 14px 40px;
   position: relative;
 }
-.faq-a::before{
+.faq-a::before {
   position: absolute;
-  content: 'A';
+  content: "A";
   top: 14px;
   left: 13px;
   font-size: 1.8rem;
   color: var(--orange);
   font-weight: var(--d-bold);
 }
-.faq-others{
+.faq-others {
   font-size: 1.4rem;
   max-width: 800px;
   margin: 0 auto;
 }
-.faq-others span{
-  vertical-align: -.2em;
+.faq-others span {
+  vertical-align: -0.2em;
 }
 /*
 contact:資料請求
 ================================================ */
-section.contact{
+section.contact {
   padding-bottom: 0;
 }
-.contact-top{
+.contact-top {
   font-size: 2rem;
   font-weight: var(--d-bold);
   margin-bottom: 40px;
   text-align: center;
 }
-.contact-q{
+.contact-q {
   font-weight: var(--d-bold);
   margin: 30px 0;
 }
-.contact-q li{
+.contact-q li {
   list-style-type: disc;
   list-style-position: inside;
 }
-.contact-box{
+.contact-box {
   margin: 20px 0 60px;
   background: #fff;
   padding: 30px 15px 40px;
 }
-.contact-form{
+.contact-form {
   margin-bottom: 30px;
 }
-.contact-item{
+.contact-item {
   margin-bottom: 20px;
 }
-.need{
+.need {
   font-size: 1.2rem;
   color: var(--orange);
   margin-left: 3px;
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .contact-box {
     margin: 40px auto 80px;
     padding: 40px 80px 50px;
@@ -1293,13 +1282,13 @@ section.contact{
     margin-bottom: 30px;
   }
 }
-.contact-title{
+.contact-title {
   font-weight: var(--d-bold);
 }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
+input[type="text"],
+input[type="tel"],
+input[type="email"],
 textarea {
   border: 1px solid #c7c7c7;
   background: #f2f2f2;
@@ -1311,11 +1300,11 @@ label {
   display: block;
   margin-right: 2rem;
 }
-.contact-check{
+.contact-check {
   display: flex;
 }
 /*デフォルトのチェックボックスを非表示*/
-input[type='checkbox'] {
+input[type="checkbox"] {
   opacity: 0;
   -webkit-appearance: none;
   appearance: none;
@@ -1323,115 +1312,115 @@ input[type='checkbox'] {
 }
 
 /*チェックボックス用の四角形を作る*/
-input[type='checkbox']+span::before {
+input[type="checkbox"] + span::before {
   display: inline-block;
-  content: '';
+  content: "";
   width: 2rem;
   height: 2rem;
   border: 1px solid var(--border);
   background: #fff;
   margin: -0.2rem 0.8rem 0 0;
   vertical-align: middle;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: var(--bold);
   /*padding: 0 2px;*/
   line-height: 1;
   font-size: 2rem;
 }
-input[type='checkbox']:checked+span::before {
-  content: 'check';
+input[type="checkbox"]:checked + span::before {
+  content: "check";
 }
-textarea{
+textarea {
   height: 15em;
 }
 /*--お電話でお問い合わせ--*/
-.tel-box{
+.tel-box {
   width: 280px;
-  background:var(--blue);
+  background: var(--blue);
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 6px;
   padding: 15px 0;
 }
-.tel-number{
+.tel-number {
   font-size: 2.6rem;
   font-weight: var(--bold);
   color: #fff;
   text-align: center;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
-.tel-number span{
-  vertical-align: -.2em;
+.tel-number span {
+  vertical-align: -0.2em;
 }
-.tel-hour{
+.tel-hour {
   text-align: center;
   font-family: 1.4rem;
   line-height: 1.3;
   color: #fff;
 }
-.tel-box + p{
+.tel-box + p {
   font-size: 1.4rem;
 }
 /*
 company:会社概要
 ================================================ */
-.company-list li{
+.company-list li {
   padding: 14px;
   border-bottom: 1px solid var(--border);
 }
-.company-list dt{
+.company-list dt {
   font-weight: var(--d-bold);
 }
-@media (min-width:768px){
+@media (min-width: 768px) {
   .company-list li dl {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .company-list dt{
+  .company-list dt {
     width: 20%;
   }
-  .company-list dd{
+  .company-list dd {
     width: 80%;
   }
 }
 /*
 footer
 ================================================ */
-.footer-contents{
+.footer-contents {
   padding: 60px 0;
 }
-.footer-title{
+.footer-title {
   text-align: center;
   color: var(--green);
   font-family: var(--marugo);
   font-weight: var(--bold);
   margin-bottom: 30px;
 }
-.footer-catch{
+.footer-catch {
   font-size: 1.4rem;
 }
-.footer-logo{
+.footer-logo {
   font-size: 4rem;
 }
-.address{
+.address {
   margin-bottom: 30px;
 }
-.footer-caution{
+.footer-caution {
   font-size: 1.4rem;
 }
-.footer-caution li::before{
-  content: '※';
+.footer-caution li::before {
+  content: "※";
   padding-right: 10px;
 }
-.footer-copy{
+.footer-copy {
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid var(--darkgray);
   font-size: 1.4rem;
 }
-@media (min-width:768px){
-  .footer-title{
+@media (min-width: 768px) {
+  .footer-title {
     text-align: left;
   }
 }
@@ -1439,7 +1428,7 @@ footer
 LINE用バナー
 ================================================ */
 /*--sp用--*/
-.sticky-line-sp{
+.sticky-line-sp {
   width: 100%;
   position: fixed;
   left: 0;
@@ -1449,13 +1438,13 @@ LINE用バナー
   border-radius: 6px 6px 0 0;
   z-index: 100;
 }
-.sticky-line-inner{
+.sticky-line-inner {
   margin: 0 auto;
   display: flex;
   padding: 6px 0;
   justify-content: center;
 }
-.sticky-line-sp p{
+.sticky-line-sp p {
   color: #fff;
   display: flex;
   align-items: center;
@@ -1463,14 +1452,14 @@ LINE用バナー
   font-family: var(--marugo);
   font-weight: var(--bold);
   font-size: 1.8rem;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
-.sticky-line-pc{
+.sticky-line-pc {
   display: none;
 }
 /*--pc用--*/
-@media (min-width:768px){
-  .sticky-line-sp{
+@media (min-width: 768px) {
+  .sticky-line-sp {
     display: none;
   }
   .sticky-line-pc {
@@ -1485,14 +1474,14 @@ LINE用バナー
     border: 3px solid var(--green);
     background: var(--l-yellow);
   }
-  .sticky-line-pc .sticky-line-inner{
+  .sticky-line-pc .sticky-line-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
   }
-  .sticky-line-pc p{
+  .sticky-line-pc p {
     margin-top: 13px;
     text-align: center;
     line-height: 1.2;
@@ -1501,4 +1490,3 @@ LINE用バナー
     font-size: 1.3rem;
   }
 }
-
