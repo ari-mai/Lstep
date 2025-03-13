@@ -133,9 +133,9 @@ heading：見出し
 .ttl:before {
   content: "";
   position: absolute;
-  bottom: -13px;
+  bottom: -24px;
   display: inline-block;
-  width: 100px;
+  width: 50px;
   height: 4px;
   left: 50%;
   border-radius: 2px;
